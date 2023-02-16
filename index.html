@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money Master</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.50.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/8af698d2fb.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <h1 class="text-5xl font-bold text-teal-400 text-center mt-10">Money Master <span class="text-yellow-600"><i
+                    class="fa-solid fa-sack-dollar"></i></span> </h1>
+    </header>
+    <main class="grid grid-cols-1 lg:grid-cols-2 gap-10 mx-auto w-full">
+        <div>
+            <img class=" image-fluid  m-12 px-10" src="./image/money.jpg" alt="">
+        </div>
+        <div class="bg-slate-200 m-12  text-xl text-center">
+            <!-- income  -->
+            <div>
+                <h2 class="m-5 font-medium">Income</h2>
+                <label class="inline-block w-1/5">Income: </label>
+                <input class="w-2/5 px-2 mx-4 bg-gray-300 hover:focus:text-base" type="text" name="">
+            </div>
+            <!-- expenses -->
+            <div>
+                <h2 class="m-5 font-medium">Expenses</h2>
+                <label class="inline-block w-1/5">Food: </label>
+                <input class="w-2/5 mb-2 px-2 mx-4 bg-gray-300 hover:focus:text-base" type="text" name=""> 
+                <br>
+                <label class="inline-block w-1/5">Rent: </label>
+                <input class="w-2/5 mb-2 px-2 mx-4 bg-gray-300 hover:focus:text-base" type="text" name="">
+                <br>
+                <label class="inline-block w-1/5">Clothes: </label>
+                <input class="w-2/5 mb-2 px-2 mx-4 bg-gray-300 hover:focus:text-base" type="text" name="">
+            </div>
+            <!-- calculate button -->
+            <div>
+                <button id="btn-calculate" class="btn btn-info w-1/3 mt-5 text-white hover:bg-sky-700">Calculate</button>
+            </div>
+            <!-- total expenses and balance -->
+            <div>
+                <h2 class="m-5 font-medium">Total Expenses: <span>5500</span> </h2>
+                <h2 class="mb-5 font-medium">Balance: <span>4500</span> </h2>
+            </div>
+            <!-- savings calculation -->
+            <div class="space-x-4">
+                <h3 class="inline-block ">Save: </h3> 
+                <input class="text-center bg-gray-300 w-1/4 hover:focus:text-base" type="text" name="" id=" ">
+                <span>%</span> 
+                <button class="btn btn-info w-1/5 text-white hover:bg-sky-700">Save</button>
+            </div>
+            <!-- saving and remaining amount -->
+            <div>
+                <h2 class="mt-5 font-medium">Saving Amount: <span>2000</span></h2>
+                <h2 class="mt-5 font-medium">Remaining Amount: <span>2500</span></h2>
+            </div>
+        </div>
+    </main>
+    <script src="./index.js"></script>
+</body>
+
+</html>
