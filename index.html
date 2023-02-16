@@ -13,8 +13,7 @@
 
 <body>
     <header>
-        <h1 class="text-5xl font-bold text-teal-400 text-center mt-10">Money Master <span class="text-yellow-600"><i
-                    class="fa-solid fa-sack-dollar"></i></span> </h1>
+        <h1 class="text-5xl font-bold text-teal-400 text-center mt-10">Money Master <span class="text-yellow-600"> <i class="fa-solid fa-sack-dollar"></i></span> </h1>
     </header>
     <main class="grid grid-cols-1 lg:grid-cols-2 gap-10 mx-auto w-full">
         <div>
@@ -25,43 +24,45 @@
             <div>
                 <h2 class="m-5 font-medium">Income</h2>
                 <label class="inline-block w-1/5">Income: </label>
-                <input class="w-2/5 px-2 mx-4 bg-gray-300 hover:focus:text-base" type="text" name="">
+                <input id="income-field" class="w-2/5 px-2 mx-4 bg-gray-300 hover:focus:text-base" type="text" name="">
             </div>
             <!-- expenses -->
             <div>
                 <h2 class="m-5 font-medium">Expenses</h2>
                 <label class="inline-block w-1/5">Food: </label>
-                <input class="w-2/5 mb-2 px-2 mx-4 bg-gray-300 hover:focus:text-base" type="text" name=""> 
+                <input id="food-field" class="w-2/5 mb-2 px-2 mx-4 bg-gray-300 hover:focus:text-base" type="text" name="">
                 <br>
                 <label class="inline-block w-1/5">Rent: </label>
-                <input class="w-2/5 mb-2 px-2 mx-4 bg-gray-300 hover:focus:text-base" type="text" name="">
+                <input id="rent-field" class="w-2/5 mb-2 px-2 mx-4 bg-gray-300 hover:focus:text-base" type="text" name="">
                 <br>
                 <label class="inline-block w-1/5">Clothes: </label>
-                <input class="w-2/5 mb-2 px-2 mx-4 bg-gray-300 hover:focus:text-base" type="text" name="">
+                <input id="clothes-field" class="w-2/5 mb-2 px-2 mx-4 bg-gray-300 hover:focus:text-base" type="text" name="">
             </div>
             <!-- calculate button -->
             <div>
-                <button id="btn-calculate" class="btn btn-info w-1/3 mt-5 text-white hover:bg-sky-700">Calculate</button>
+                <button id="btn-calculate"
+                    class="btn btn-info w-1/3 mt-5 text-white hover:bg-sky-700">Calculate</button>
             </div>
             <!-- total expenses and balance -->
             <div>
-                <h2 class="m-5 font-medium">Total Expenses: <span>5500</span> </h2>
-                <h2 class="mb-5 font-medium">Balance: <span>4500</span> </h2>
+                <h2  class="m-5 font-medium">Total Expenses: <span id="expenses-text">5500</span> </h2>
+                <h2  class="mb-5 font-medium">Balance: <span id="balance-text">4500</span> </h2>
             </div>
             <!-- savings calculation -->
             <div class="space-x-4">
-                <h3 class="inline-block ">Save: </h3> 
-                <input class="text-center bg-gray-300 w-1/4 hover:focus:text-base" type="text" name="" id=" ">
-                <span>%</span> 
-                <button class="btn btn-info w-1/5 text-white hover:bg-sky-700">Save</button>
+                <h3 class="inline-block ">Save: </h3>
+                <input id="save-field" class="text-center bg-gray-300 w-1/4 hover:focus:text-base" type="text" name="">
+                <span>%</span>
+                <button id="btn-save" class="btn btn-info w-1/5 text-white hover:bg-sky-700">Save</button>
             </div>
             <!-- saving and remaining amount -->
             <div>
-                <h2 class="mt-5 font-medium">Saving Amount: <span>2000</span></h2>
-                <h2 class="mt-5 font-medium">Remaining Amount: <span>2500</span></h2>
+                <h2  class="mt-5 font-medium">Saving Amount: <span id="saving-text">2000</span></h2>
+                <h2  class="mt-5 font-medium">Remaining Amount: <span id="remaining-text">2500</span></h2>
             </div>
         </div>
     </main>
+    <script src="./utilities.js"></script>
     <script src="./index.js"></script>
 </body>
 
