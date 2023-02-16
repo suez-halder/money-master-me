@@ -11,7 +11,7 @@ document.getElementById('btn-save').addEventListener('click',function(){
     innerText('saving-text', savingAmount); 
     
     const remainingAmount =calculateBalance() - savingAmount;
-    if(remainingAmount > 0){
+    if(remainingAmount < 0){
         return alert('If you want to save, Earn MORE!')
     }
     innerText('remaining-text', remainingAmount);
